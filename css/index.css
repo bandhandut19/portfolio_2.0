@@ -14,8 +14,19 @@
     --transition: all 800ms ease;
 
 }
-h1,h2,h3,h4,h5{
+h1,h2,h3,h4{
     line-height: 1.2;
+}
+h5{
+    font-family: 'Michroma', sans-serif;
+    font-size: 45px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+.img{
+    width: 300px;
+    height: 400px;
 }
 .btn{
     position: relative;
@@ -93,6 +104,34 @@ nav{
     
 }
 
+
+
+
+.container_profiledetails{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5rem;
+}
+#bio{
+    border-radius: 0px;
+    box-shadow: none;
+    background: none;
+    width: 35rem;
+}
+
+#bio p{
+    position: relative;
+    color: #663399;
+    top: 3rem;
+    font-size: 25px;
+}
+#bio h3{
+    position: relative;
+    top: 1.5rem;
+    font-size: 30px;
+}
+
+
 .procard{
     background-color: var(--color_bg_2);
     /* border: 3px solid black; */
@@ -101,7 +140,7 @@ nav{
     position: relative;
     top: 17rem;
     margin-left: 5rem;
-    margin-bottom: 35rem;
+    margin-bottom: 25rem;
     border-radius: 1.5rem;
     box-shadow: 15px 15px 30px purple;
 }
@@ -141,6 +180,32 @@ nav{
 .slinks a i{
     font-size: 22px;
 }
+
+.container_projects{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 7rem;
+    margin-bottom: 5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.projects{
+    border: 2px solid black;
+    width: 400px;
+    height: 600px;
+}
+.projects p{
+    position: relative;
+    margin-top: 3rem;
+    text-align: center;
+}
+.projects .btn{
+    position: relative;
+    margin-top: 2rem;
+    margin-left: 8rem;
+}
+
 
 /* Phones */
 @media screen and (max-width:600px){
