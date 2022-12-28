@@ -1,0 +1,151 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --color_bg_1: rgb(255, 255, 255);
+    --color_bg: #663399;
+    --color_content_01: black;
+    --color_bg_2: rgb(87, 221, 255);
+    --transition: all 800ms ease;
+
+}
+h1,h2,h3,h4,h5{
+    line-height: 1.2;
+}
+.btn{
+    position: relative;
+    background-color: blueviolet;
+    border: 0;
+    height: 55px;
+    width: 120px;
+    font-size: 1rem;
+    font-weight: medium;
+}
+.btn:hover{
+    background-color: purple;
+    border: 2px solid purple;
+    color: aliceblue;
+    transition: var(--transition);
+}
+
+body{
+    background-color: var(--color_bg_1);
+}
+
+
+
+/* ---------------------------------------- */
+
+
+.navtitle  h4{
+    text-align: center;
+    position: relative;
+    top: 5rem;
+    color: var(--color_content_01);
+    font-size: 43px;
+    font-weight: lighter;
+    font-family:'Michroma', sans-serif;
+}
+.navtitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.titleref{
+    color: var(--color_content_01);
+}
+/* He He optional by the way ! */
+#designation{
+    position: relative;
+    top: 9rem;
+    font-size: 1.5rem;
+}
+/* hmmmmmmmmmmmmmmmmmmmm */
+
+nav{
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+
+}
+.nav_container{
+    display: flex;
+    justify-content: center;
+    background-color:#663399;
+    width: 100vw;
+    height: 14rem;
+    position: fixed;
+    z-index: 11;
+}
+.window-scroll{
+    background-color: purple;
+    transition: all 800ms ease-in;
+    box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.35);
+    
+}
+
+.procard{
+    background-color: var(--color_bg_2);
+    /* border: 3px solid black; */
+    height: 30rem;
+    width: 25rem;
+    position: relative;
+    top: 17rem;
+    margin-left: 5rem;
+    margin-bottom: 35rem;
+    border-radius: 1.5rem;
+    box-shadow: 15px 15px 30px purple;
+}
+.proimg{
+    position: relative;
+    left: 6rem;
+    top: 3rem;
+    box-shadow: 3rem ;
+    border-radius: 50%;
+}
+#profilecardh{
+    position: relative;
+    left: 7.8rem;
+    top: 4.5rem;
+    font-size: 1.5rem;
+}
+.procard .btn{
+    left: 8.8rem;
+    top: 8.8rem;
+    
+}
+.sociallinks{
+    
+    position: relative;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(4,1fr);
+    top: 5rem;
+    left: 1.5rem;
+}
+.slinks a{
+    border: 5px solid white;
+    border-radius: 40%;
+    padding: 10px;
+    background: white;
+}
+.slinks a i{
+    font-size: 22px;
+}
+
+/* Phones */
+@media screen and (max-width:600px){
+    .nav_container{
+        width: 100%;
+    }
+
+}
