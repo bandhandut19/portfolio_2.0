@@ -28,14 +28,18 @@
     <section class="profile">
         <div class="container_profiledetails">
             <article class="procard">
-                <img src="./img/profile_01.jpg" class="proimg" alt="profile_image">
+                <div class="img_container">
+                    <img src="./img/profile_01.jpg" class="proimg" alt="profile_image">
+                </div>
                 <!-- <h4 id="profilecardh">Web Developer</h4> -->
-                <ul class="sociallinks">
-                    <li class="slinks"><a href="#"><i class="uil uil-facebook-f"></i></a></li>
-                    <li class="slinks"><a href="#"><i class="uil uil-instagram-alt"></i></a></li>
-                    <li class="slinks"><a href="#"><i class="uil uil-twitter"></i></a></li>
-                    <li class="slinks"><a href="#"><i class="uil uil-linkedin-alt"></i></a></li>
-                </ul>
+                <div>
+                    <ul class="sociallinks">
+                        <li class="slinks"><a href="#"><i class="uil uil-facebook-f"></i></a></li>
+                        <li class="slinks"><a href="#"><i class="uil uil-instagram-alt"></i></a></li>
+                        <li class="slinks"><a href="#"><i class="uil uil-twitter"></i></a></li>
+                        <li class="slinks"><a href="#"><i class="uil uil-linkedin-alt"></i></a></li>
+                    </ul>
+                </div>
                 <button class="btn">Download CV</button>
             </article>
 
@@ -52,31 +56,72 @@
     </section>
 
     <section class="Projects">
-        <h5>My Projects</h5>
+        <h5>My Latest Projects</h5>
         <div class="container_projects">
             <article class="projects">
                 <div class="pro_img_01">
-                    <img class="img" src="" alt="Project_Photo">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quasi iure asperiores nobis temporibus tempora quos eum hic. Nihil nulla facere asperiores eos sed debitis!</p>
+                    <img class="img" src="./img/project_demo.png" alt="Project_Photo">
+                    <h4>BondBlog</h4>
+                    <p> <b> <i> A blogging website for bloggers where multiple bloggers can post at the same
+                                time.</i></b> Viwers can search for their acquainted blogs.
+                        The interface is engaging. It's built with HTML and styled with css. Of course JavaScript is
+                        here to serve the user a great experience.
+                    </p>
                 </div>
-                <button class="btn">See Details</button>
+                <button class="btn"> <a class="color_black" href="#">See Details</a> </button>
             </article>
             <article class="projects">
                 <div class="pro_img_02">
-                    <img class="img" src="" alt="Project_Photo">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quasi iure asperiores nobis temporibus tempora quos eum hic. Nihil nulla facere asperiores eos sed debitis!</p>
+                    <img class="img" src="./img/project_demo.png" alt="Project_Photo">
+                    <h4>Portfolio 1.0</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quasi iure asperiores nobis
+                        temporibus tempora quos eum hic. Nihil nulla facere asperiores eos sed debitis! Lorem ipsum,
+                        dolor sit amet consectetur adipisicing elit. Adipisci eaque dicta facilis hic est eum
+                        natus. </p>
                 </div>
-                <button class="btn">See Details</button>
+                <button class="btn"> <a class="color_black" href="#">See Details</a></button>
             </article>
             <article class="projects">
                 <div class="pro_img_03">
-                    <img class="img" src="" alt="Project_Photo">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quasi iure asperiores nobis temporibus tempora quos eum hic. Nihil nulla facere asperiores eos sed debitis!</p>
+                    <img class="img" src="./img/project_demo.png" alt="Project_Photo">
+                    <h4>Food delivery Website</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quasi iure asperiores nobis
+                        temporibus tempora quos eum hic. Nihil nulla facere asperiores eos sed debitis! Lorem ipsum,
+                        dolor sit amet consectetur adipisicing elit. Adipisci eaque dicta facilis hic est eum
+                        natus. </p>
                 </div>
-                <button class="btn">See Details</button>
+                <button class="btn"> <a class="color_black" href="#">See Details</a></button>
             </article>
         </div>
     </section>
+
+    <section class="footer">
+        <h5>Contact Me </h5>
+        <div class="container_footer">
+            <div class="contact_me">
+                <form action="#">
+                   <label for="fname">First Name:</label> 
+                   <input type="text" id="name" name="name">
+
+                   <label for="lname">Last Name:</label> 
+                   <input type="text" id="lname" name="lname">
+
+                   <label for="email">Email:</label> 
+                   <input type="email" id="email" email="email">
+
+                   <label for="no">Phone:</label> 
+                   <input type="text" id="no" contact-no="no">
+
+                   <input class="btn"type="submit" value="Submit">
+                </form>
+                <h4 id="copyright">&copy Copyright Bondon Datta. All rights reserved (2022-2023).</h4>
+            </div>
+            
+        </div>
+    </section>
+
+
+
 </body>
 <script src="./js/index.js"></script>
 

@@ -5,13 +5,21 @@
     text-decoration: none;
     list-style: none;
 }
+.color_black{
+    color: black;
+}
 
 :root{
-    --color_bg_1: rgb(255, 255, 255);
     --color_bg: #663399;
+    --color_bg0:rgb(45, 133, 139);
+    --color_bg_1: rgb(255, 255, 255);
+    --color_bg_2: rgb(39, 118, 138);
+    --color_bg_3: rgb(18, 102, 122);
+    --color-card:rgb(255, 70, 255);
     --color_content_01: black;
-    --color_bg_2: rgb(87, 221, 255);
+    --color_content_02:rgb(250, 159, 159);
     --transition: all 800ms ease;
+    --transition-1: all 700ms ease-out;
 
 }
 h1,h2,h3,h4{
@@ -25,14 +33,16 @@ h5{
     margin-bottom: 6rem;
 }
 .img{
-    width: 300px;
-    height: 400px;
+    overflow: hidden;
+    object-fit: cover;
+    display: block;
+    height: 300px;
 }
 .btn{
     position: relative;
     background-color: blueviolet;
     border: 0;
-    height: 55px;
+    height: 50px;
     width: 120px;
     font-size: 1rem;
     font-weight: medium;
@@ -48,15 +58,13 @@ body{
     background-color: var(--color_bg_1);
 }
 
-
-
 /* ---------------------------------------- */
 
 
 .navtitle  h4{
     text-align: center;
     position: relative;
-    top: 5rem;
+    top: 1rem;
     color: var(--color_content_01);
     font-size: 43px;
     font-weight: lighter;
@@ -74,26 +82,26 @@ body{
 /* He He optional by the way ! */
 #designation{
     position: relative;
-    top: 9rem;
+    top: 5rem;
     font-size: 1.5rem;
 }
 /* hmmmmmmmmmmmmmmmmmmmm */
 
 nav{
     width: 100vw;
-    height: 5rem;
+    height: 0.1rem;
     position: fixed;
     top: 0;
     z-index: 10;
-
-
+    
+    
 }
 .nav_container{
     display: flex;
     justify-content: center;
     background-color:#663399;
     width: 100vw;
-    height: 14rem;
+    height: 8rem;
     position: fixed;
     z-index: 11;
 }
@@ -131,6 +139,10 @@ nav{
     font-size: 30px;
 }
 
+.profile{
+    position: relative;
+    top: 1rem;
+}
 
 .procard{
     background-color: var(--color_bg_2);
@@ -138,16 +150,26 @@ nav{
     height: 30rem;
     width: 25rem;
     position: relative;
-    top: 17rem;
+    top: 10rem;
     margin-left: 5rem;
-    margin-bottom: 25rem;
+    margin-bottom: 15rem;
     border-radius: 1.5rem;
-    box-shadow: 15px 15px 30px purple;
+    box-shadow: 0.001rem 0.001rem 2rem inset purple;
 }
+.procard:hover{
+    /* background-color: var(--color_bg0); */
+    transition: var(--transition-1);
+    box-shadow: 15px 15px 30px rgb(65, 100, 110);
+}
+/* .img_container{
+    border: 1rem solid purple;
+    box-shadow: 0.2rem 0.2rem 2rem inset purple;
+    border-radius: 90%;
+} */
 .proimg{
     position: relative;
-    left: 6rem;
-    top: 3rem;
+    left: 5.5rem;
+    top: 1.5rem;
     box-shadow: 3rem ;
     border-radius: 50%;
 }
@@ -160,28 +182,39 @@ nav{
 .procard .btn{
     left: 8.8rem;
     top: 8.8rem;
+    color: white;
     
 }
 .sociallinks{
     
     position: relative;
     display: grid;
-    gap: 0.5rem;
+    gap: 0.3rem;
     grid-template-columns: repeat(4,1fr);
-    top: 5rem;
+    top: 4rem;
     left: 1.5rem;
 }
 .slinks a{
     border: 5px solid white;
     border-radius: 40%;
-    padding: 10px;
+    padding: 8px;
     background: white;
+}
+.slinks a :hover{
+    border: 5px solid var(--color_bg);
+    border-radius: 40%;
+    padding: 5px;
+    background: var(--color_bg);
+    color: white;
+    transition: all 500ms ease-out;
 }
 .slinks a i{
     font-size: 22px;
 }
 
+/* --------------------- PROJECTS --------------------- */
 .container_projects{
+    
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 7rem;
@@ -191,19 +224,85 @@ nav{
 }
 
 .projects{
+    background: var(--color_bg_3);
     border: 2px solid black;
     width: 400px;
     height: 600px;
 }
+.projects h4{
+    text-align: center;
+    font-family: 'Michroma', sans-serif;
+    position: relative;
+    top: 1rem;
+    font-size: 25px;
+    font-weight: bolder;
+    color: var(--color-card);
+}
 .projects p{
     position: relative;
-    margin-top: 3rem;
     text-align: center;
+    margin: 2rem 2rem 0 2rem;
+    font-size: 1.2rem;
+    color: var(--color_content_02);
 }
 .projects .btn{
     position: relative;
-    margin-top: 2rem;
+    margin-top: 1.2rem;
     margin-left: 8rem;
+}
+.projects:hover{
+    background: transparent;
+    transition: var(--transition-1);
+}
+
+.projects .btn a:hover{
+    color: white;
+}
+.projects .btn a{
+    padding: 1rem;
+}
+
+.projects .img {
+    width: 400px;
+}
+
+/* ----------------- CONTACT ME ------------------ */
+
+
+.footer{
+    position: relative;
+    top: 5rem;
+    height: 36rem;
+    background: var(--color_bg);
+}
+.footer h5{
+    top: 1.2rem;
+}
+
+.container_footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_me form{
+    display: grid;
+    gap: 0.5rem;
+}
+
+.contact_me .btn{
+    position: relative;
+    top: 2rem;
+    left: 8rem;
+}
+
+
+
+#copyright{
+    color: azure;
+    position: relative;
+    top: 7rem;
+    right: 34rem;
 }
 
 
