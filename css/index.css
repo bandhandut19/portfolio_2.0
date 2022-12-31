@@ -156,11 +156,11 @@ nav{
     border-radius: 1.5rem;
     box-shadow: 0.001rem 0.001rem 2rem inset purple;
 }
-.procard:hover{
-    /* background-color: var(--color_bg0); */
+/* .procard:hover{
+    background-color: var(--color_bg0);
     transition: var(--transition-1);
     box-shadow: 15px 15px 30px rgb(65, 100, 110);
-}
+} */
 /* .img_container{
     border: 1rem solid purple;
     box-shadow: 0.2rem 0.2rem 2rem inset purple;
@@ -168,7 +168,7 @@ nav{
 } */
 .proimg{
     position: relative;
-    left: 5.5rem;
+    left: 5.8rem;
     top: 1.5rem;
     box-shadow: 3rem ;
     border-radius: 50%;
@@ -217,10 +217,10 @@ nav{
     
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 7rem;
+    gap: 5rem;
     margin-bottom: 5rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
 .projects{
@@ -272,7 +272,7 @@ nav{
 .footer{
     position: relative;
     top: 5rem;
-    height: 36rem;
+    height: 39rem;
     background: var(--color_bg);
 }
 .footer h5{
@@ -296,12 +296,29 @@ nav{
     left: 8rem;
 }
 
-
+textarea{
+    border-radius: .25rem;
+}
+input[type="text"],input[type="email"]{
+    height: 2rem;
+    width: 100%;
+    border-radius: 0.25rem;
+}
+input[type="text"]:invalid,input[type="email"]:invalid,select,textarea{
+    box-shadow: none;
+}
+input::placeholder{
+    text-align: center;
+    color: white;
+}
+input,textarea{
+    background: var(--color_bg_2);
+}
 
 #copyright{
     color: azure;
     position: relative;
-    top: 7rem;
+    top: 4rem;
     right: 34rem;
 }
 
